@@ -1,0 +1,19 @@
+# ============================================================
+# CS-DIP Configuration: Image Denoising (σ = 25)
+# ============================================================
+# Reference: Section 4.2 — Gaussian noise with σ=25
+
+task: denoise
+noise_sigma: 25
+
+# ----- Network Architecture -----
+input_channels: 32          # Noise input channels
+channels: [64, 128, 256, 512, 512]  # Encoder channel progression (5 scales)
+
+# ----- Optimization (Algorithm 1) -----
+iterations: 3000            # Total optimization steps
+lr: 0.001                   # Adam learning rate
+lambda_curv: 0.01           # Curvature consistency weight
+
+# ----- Reproducibility -----
+seed: 42

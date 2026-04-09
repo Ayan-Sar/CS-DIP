@@ -1,0 +1,19 @@
+# ============================================================
+# CS-DIP Configuration: Super-Resolution (×2)
+# ============================================================
+# Reference: Section 4.2 — Bicubic downsampling, scale factor 2
+
+task: sr
+scale_factor: 2
+
+# ----- Network Architecture -----
+input_channels: 32
+channels: [64, 128, 256, 512, 512]
+
+# ----- Optimization -----
+iterations: 5000            # SR requires more iterations
+lr: 0.001
+lambda_curv: 0.005          # Lower curvature weight for SR
+
+# ----- Reproducibility -----
+seed: 42

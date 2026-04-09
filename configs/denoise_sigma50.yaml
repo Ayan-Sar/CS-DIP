@@ -1,0 +1,20 @@
+# ============================================================
+# CS-DIP Configuration: Image Denoising (σ = 50)
+# ============================================================
+# Reference: Section 4.2 — Gaussian noise with σ=50
+# Higher noise requires slightly stronger curvature regularization.
+
+task: denoise
+noise_sigma: 50
+
+# ----- Network Architecture -----
+input_channels: 32
+channels: [64, 128, 256, 512, 512]
+
+# ----- Optimization -----
+iterations: 3000
+lr: 0.001
+lambda_curv: 0.02           # Increased for stronger denoising
+
+# ----- Reproducibility -----
+seed: 42

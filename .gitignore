@@ -1,0 +1,53 @@
+# ============================================================
+# CS-DIP .gitignore
+# ============================================================
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ----- Virtual Environments -----
+venv/
+env/
+.env/
+
+# ----- IDE -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----- Data & Results (large files) -----
+data/Set5/
+data/Set14/
+data/BSD68/
+data/Urban100/
+results/
+outputs/
+checkpoints/
+logs/
+
+# ----- Jupyter -----
+.ipynb_checkpoints/
+
+# ----- OS -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- PyTorch -----
+*.pth
+*.pt
+*.ckpt
+
+# ----- TensorBoard -----
+runs/
+events.out.tfevents.*
