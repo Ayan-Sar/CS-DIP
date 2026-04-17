@@ -25,7 +25,7 @@
 3. **No Early Stopping** — Eliminates the need for early stopping heuristics, providing stable convergence superior to standard DIP
 
 > **Paper:** "Curvature-Steered Deep Image Prior (CS-DIP): A Geometric Architecture for Self-Supervised Inverse Problems"
-> *IEEE Signal Processing Letters*
+> *IEEE Transactions on Artificial Intelligence*
 
 ---
 
